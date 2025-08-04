@@ -1,11 +1,10 @@
 ---
 title: Home
 layout: home
----
-
----
+nav_order: 1
 title: Customization
-nav_order: 6
+layout: customization
+nav_order: 2
 ---
 
 
