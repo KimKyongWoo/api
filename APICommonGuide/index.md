@@ -1,7 +1,7 @@
 ---
 title: API Common Guide
 layout: default
-nav_order: 2
+nav_order: 1
 ---
 
 # API Common Guide
