@@ -14,11 +14,8 @@ nav_order: 1
 ---
 
 {: .important }
-> {: .opaque }
-> <div markdown="block">
 > The API Common Guide explains what you need to know in advance when developing client applications using Ipinlabs API.
 >   * Last modified: August 5, 2025  
-> </div>
 
 {: .warning }
 > The contents of this document are subject to change at any time.
