@@ -1,6 +1,6 @@
 ---
 title: API Common Guide
-layout: default
+layout: Home
 nav_order: 1
 ---
 
