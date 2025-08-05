@@ -21,7 +21,9 @@ Registration API Key.
 > |:----|:-------|:--------------------------|
 > | key | string | API Key value to register |
 
-Response
+## Response
+---
+
 {: .new}
 > <dl>
 >   <dt>Code</dt>
@@ -41,6 +43,7 @@ Response
     }
 }
 ```
+
 {: .warning}
 > <dl>
 >   <dt>Code</dt>
@@ -57,6 +60,7 @@ Response
     }
 }
 ```
+
 {: .warning}
 > <dl>
 >   <dt>Code</dt>
@@ -73,6 +77,7 @@ Response
     }
 }
 ```
+
 {: .warning}
 > <dl>
 >   <dt>Code</dt>
