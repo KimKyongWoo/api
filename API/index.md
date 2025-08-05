@@ -10,9 +10,10 @@ nav_order: 4
 Registration API Key.  
 
 {: .code}
-> POST /v1/key/regist
+> POST  /v1/key/regist
 > {: .label .label-red }
->
->
+>   
+>   
 > AUTHORIZATIONS: API Key
 > {: .label .label-blue }
+>  
