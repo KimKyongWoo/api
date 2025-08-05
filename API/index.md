@@ -27,19 +27,19 @@ Response
 {: .new}
 > <dl>
 >   <dt>Code</dt>
->   <dd>200</dt>
+>   <dd>200</dd>
 >   <dt>Response Schema</dt>
->   <dd>application/json<dd>
+>   <dd>application/json</dd>
 > </dl>
 > 
-> ```
-> {
->   result: 
->   {
->       key_expired: long,
->       remaining_total_usage: int,
->       max_total_usage: int,
->       scope: array<string>
->   }
-> }
-> ```
+```js
+{
+    result: 
+    {
+        key_expired: long,
+        remaining_total_usage: int,
+        max_total_usage: int,
+        scope: array<string>
+    }
+}
+```
