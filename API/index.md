@@ -6,7 +6,8 @@ nav_order: 4
 
 * [Key Registration](#key-registration)
 * [Key Details](#key-details)
-* [AccessToken Issuance](#accessToken-issuance)
+* [AccessToken Issuance](#accesstoken-issuance)
+* [Refresh Token](#refresh-token)
 
 # Key Registration
 ---
@@ -197,6 +198,109 @@ Issuing Access Tokens Using API Keys.
 >   <dd>/v1/auth/token</dd>
 >   <dt>AUTHORIZATIONS</dt>
 >   <dd>API Key</dd>
+> </dl>
+
+
+## Response
+---
+
+{: .new}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>200</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        key_expired: long,
+        access_token: string,
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>400</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Bad request"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>404</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Not found"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>429</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "This token is not authenticated."
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>500</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Internal server error"
+    }
+}
+```
+
+# Refresh Token
+---
+
+Renewing AccessToken
+
+{: .code}
+> <dl>
+>   <dt>GET</dt>
+>   <dd>/v1/auth/refresh</dd>
+>   <dt>AUTHORIZATIONS</dt>
+>   <dd>Access Token</dd>
 > </dl>
 
 
