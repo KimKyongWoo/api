@@ -20,3 +20,6 @@ callouts:
   new: 
     title: New
     color: green
+  code:
+    title: Code
+    color: gray
