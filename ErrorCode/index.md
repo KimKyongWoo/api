@@ -14,8 +14,8 @@ nav_order: 5
 > </div>
 
 {: .note }
-> - Normal call: The HTTP status code is ‘2xx’, and you will receive the specified format of results for each API.
-> - Abnormal calls: HTTP status codes are in the 4xx and 500, and you will receive error codes and error messages specified for each API.
+> * Normal call: The HTTP status code is ‘2xx’, and you will receive the specified format of results for each API.
+> * Abnormal calls: HTTP status codes are in the 4xx and 500, and you will receive error codes and error messages specified for each API.
 
 
 | HTTP STATUS CODE(ERROR TYPE) | Reasons For Errors |
