@@ -13,8 +13,6 @@ Registration API Key.
 > <dl>
 >   <dt>POST</dt>
 >   <dd>/v1/key/regist</dd>
->   <dt>AUTHORIZATIONS:</dt>
->   <dd>API Key</dd>
 >   <dt>Request Body Schema</dt>
 >   <dd>application/json</dd>
 > </dl>
@@ -40,6 +38,54 @@ Response
         remaining_total_usage: int,
         max_total_usage: int,
         scope: array<string>
+    }
+}
+```
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>400</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Bad request"
+    }
+}
+```
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>404</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Not found"
+    }
+}
+```
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>500</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Internal server error"
     }
 }
 ```
