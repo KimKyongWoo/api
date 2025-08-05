@@ -4,7 +4,7 @@ layout: default
 nav_order: 4
 ---
 
-# Key registration
+# Key Registration
 ---
 
 Registration API Key.  
@@ -20,6 +20,92 @@ Registration API Key.
 > | field | type | desc |
 > |:----|:-------|:--------------------------|
 > | key | string | API Key value to register |
+
+## Response
+---
+
+{: .new}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>200</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        key_expired: long,        
+        max_total_usage: int        
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>400</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Bad request"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>404</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Not found"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>500</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Internal server error"
+    }
+}
+```
+
+# Key Details
+---
+
+API Key Details Status.  
+
+{: .code}
+> <dl>
+>   <dt>GET</dt>
+>   <dd>/v1/key/detail</dd>
+>   <dt>AUTHORIZATIONS</dt>
+>   <dd>API Key</dd>
+> </dl>
+
 
 ## Response
 ---
