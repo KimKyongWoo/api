@@ -14,8 +14,9 @@ Registration API Key.
 > {: .label .label-red }
 > /v1/key/regist
 
-{: .code}
-> AUTHORIZATIONS  {: .label .label-red }  API Key
+AUTHORIZATIONS:
+{: .label .label-red }
+API Key
 
 Default label
 {: .label }
