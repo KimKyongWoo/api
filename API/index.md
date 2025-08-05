@@ -10,28 +10,9 @@ nav_order: 4
 Registration API Key.  
 
 {: .code}
-> POST
+> POST /v1/key/regist
 > {: .label .label-red }
-> /v1/key/regist
 
-AUTHORIZATIONS:
-{: .label .label-red }
-API Key
-
-Default label
-{: .label }
-
-Blue label
-{: .label .label-blue }
-
-Stable
-{: .label .label-green }
-
-New release
-{: .label .label-purple }
-
-Coming soon
-{: .label .label-yellow }
-
-Deprecated
-{: .label .label-red }
+{: .code}
+> AUTHORIZATIONS: API Key
+> {: .label .label-blue }
