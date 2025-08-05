@@ -14,7 +14,7 @@ nav_order: 4
 
 Registration API Key.  
 
-{: .code}
+{: .post}
 > <dl>
 >   <dt>POST</dt>
 >   <dd>/v1/key/regist</dd>
@@ -103,7 +103,7 @@ Registration API Key.
 
 API Key Details Status.  
 
-{: .code}
+{: .get}
 > <dl>
 >   <dt>GET</dt>
 >   <dd>/v1/key/detail</dd>
@@ -192,7 +192,7 @@ API Key Details Status.
 
 Issuing Access Tokens Using API Keys.  
 
-{: .code}
+{: .get}
 > <dl>
 >   <dt>GET</dt>
 >   <dd>/v1/auth/token</dd>
@@ -295,7 +295,7 @@ Issuing Access Tokens Using API Keys.
 
 Renewing AccessToken
 
-{: .code}
+{: .get}
 > <dl>
 >   <dt>GET</dt>
 >   <dd>/v1/auth/refresh</dd>

@@ -23,3 +23,9 @@ callouts:
   code:
     title: Code
     color: grey-dk
+  post:
+    title: POST
+    color: red
+  get:
+    title: GET
+    color: blue
