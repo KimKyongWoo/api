@@ -12,7 +12,7 @@ Registration API Key.
 {: .code}
 > POST  /v1/key/regist
 > {: .label .label-red }
->   </br>
+>   
 >   
 > AUTHORIZATIONS: API Key
 > {: .label .label-blue }
