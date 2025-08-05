@@ -20,6 +20,26 @@ Registration API Key.
 > </dl>
 > 
 > | field | type | desc |
-> |:-------------|:------------------|:------|
-> | key | string |   |
+> |:----|:-------|:--------------------------|
+> | key | string | API Key value to register |
 
+Response
+{: .new}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>200</dt>
+>   <dt>Response Schema</dt>
+>   <dd>application/json<dd>
+> </dl>
+> 
+> ```
+> {
+>   result: 
+>   {
+>       key_expired: long,
+>       remaining_total_usage: int,
+>       max_total_usage: int,
+>       scope: array<string>
+>   }
+> }
+> ```
