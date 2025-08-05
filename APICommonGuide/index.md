@@ -15,5 +15,9 @@ nav_order: 1
 
 {: .highlight }
 > The API Common Guide explains what you need to know in advance when developing client applications using Ipinlabs API.
->   * Last modified: August 5, 2025
+>   * Last modified: August 5, 2025  
+> {: .opaque }
+> <div markdown="block">
+> {: .warning }
 >     The contents of this document are subject to change at any time.
+> </div>
