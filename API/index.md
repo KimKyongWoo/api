@@ -10,10 +10,11 @@ nav_order: 4
 Registration API Key.  
 
 {: .code}
-> POST  /v1/key/regist
-> {: .label .label-red }
+> <dl>
+> <dt>POST
+> {: .label .label-red }</dt>
+> <dd>/v1/key/regist</dd>
 >   
->   
-> AUTHORIZATIONS: API Key
-> {: .label .label-blue }
->  
+> <dt>AUTHORIZATIONS:
+> {: .label .label-blue }</dt>
+> <dd>API Key</dd>
