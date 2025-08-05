@@ -4,10 +4,14 @@ layout: default
 nav_order: 4
 ---
 
+---
+
 * [Key Registration](#key-registration)
 * [Key Details](#key-details)
 * [AccessToken Issuance](#accesstoken-issuance)
 * [Refresh Token](#refresh-token)
+
+---
 
 # Key Registration
 ---
