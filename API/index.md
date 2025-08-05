@@ -4,6 +4,10 @@ layout: default
 nav_order: 4
 ---
 
+* [Key Registration](#key-registration)
+* [Key Details](#key-details)
+* [AccessToken Issuance](#accessToken-issuance)
+
 # Key Registration
 ---
 
@@ -160,6 +164,110 @@ API Key Details Status.
     result: 
     {
         error: "Not found"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>500</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Internal server error"
+    }
+}
+```
+
+
+# AccessToken Issuance
+---
+
+Issuing Access Tokens Using API Keys.  
+
+{: .code}
+> <dl>
+>   <dt>GET</dt>
+>   <dd>/v1/auth/token</dd>
+>   <dt>AUTHORIZATIONS</dt>
+>   <dd>API Key</dd>
+> </dl>
+
+
+## Response
+---
+
+{: .new}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>200</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        key_expired: long,
+        access_token: string,
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>400</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Bad request"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>404</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Not found"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>429</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "This token is not authenticated."
     }
 }
 ```
