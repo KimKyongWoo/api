@@ -1,5 +1,5 @@
 ---
-title: Home
+title: API Common Guide
 layout: home
 nav_order: 0
 ---
