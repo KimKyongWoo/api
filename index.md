@@ -1,7 +1,7 @@
 ---
-title: API Common Guide
-layout: Home
-nav_order: 1
+title: Home
+layout: home
+nav_order: 0
 ---
 
 # API Common Guide
