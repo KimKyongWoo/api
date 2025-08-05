@@ -11,10 +11,11 @@ Registration API Key.
 
 {: .code}
 > <dl>
-> <dt>POST</dt>
-> {: .label .label-red }
-> <dd>/v1/key/regist</dd>
+>   <dt>POST</dt>
+>   {: .label .label-red }
+>   <dd>/v1/key/regist</dd>
 >   
-> <dt>AUTHORIZATIONS:</dt>
-> {: .label .label-blue }
-> <dd>API Key</dd>
+>   <dt>AUTHORIZATIONS:</dt>
+>   {: .label .label-blue }
+>   <dd>API Key</dd>
+> </dl>
