@@ -617,7 +617,7 @@ A function that prints only the basic information of all floors belonging to a s
 
 {: .get}
 > <dl>
->   <dt>GET</dt>
+>   <dt>GET {: .label .label-green }</dt>
 >   <dd>/v1/floor/list</dd>
 >   <dt>AUTHORIZATIONS</dt>
 >   <dd>Access Token</dd>
