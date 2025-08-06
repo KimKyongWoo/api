@@ -612,7 +612,8 @@ A function that prints only the basic information of all floors belonging to a s
 # Floor List
 ---
 
-This feature temporarily provides basic information on all levels managed by the organization and will be deleted in the future.
+{: .warning}
+> This feature temporarily provides basic information on all levels managed by the organization and will be deleted in the future.
 
 {: .get}
 > <dl>
