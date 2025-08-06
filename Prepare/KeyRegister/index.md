@@ -12,7 +12,7 @@ Ipinlabs API issues API authentication keys, which are identification tools, to 
 These keys are used as parameters for authentication when calling the API.
 Therefore, to use Ipinlabs API, you must first obtain an authentication key and register it.
 
-{: .important }
+{: .warning }
 > However, registration does not grant access to the key.
 > You must request an Access Token with the authentication key and use the issued Token to access the Iplinlabs API.
 
@@ -20,5 +20,5 @@ Therefore, to use Ipinlabs API, you must first obtain an authentication key and 
 
 When you register and activate the key, the expiration time of the authentication key and the maximum usage of API calls are provided as result values, and the expiration time is provided as a Unix timestamp.
 
-{: .important }
+{: .warning }
 > However, the maximum number of API calls may vary depending on the service environment.
