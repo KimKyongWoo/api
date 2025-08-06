@@ -6,3 +6,5 @@ nav_order: 34
 nav_enabled: true
 permalink: /404
 ---
+
+404 Not found
