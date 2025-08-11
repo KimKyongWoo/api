@@ -38,8 +38,8 @@ When it is not possible to predict the location of current assets using the buil
 >   bssid:"string",
 >   rssi: "Map<string, int>"
 >   sensorValue:"int",
->   voltage:"int",
->   percentage:"int"
+>   voltage:"float",
+>   percentage:"float"
 > }
 > ```
 >

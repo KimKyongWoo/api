@@ -857,10 +857,12 @@ Function to output detailed information on a specific layer
 ```js
 [
     {
-        time: "long",
-        x: "float",
-        y: "float"
-    }
+        asset_id: "string",
+        asset_name: "string",
+        asset_x: "double",
+        asset_y: "double",
+        timestamp: "long",
+    }   
 ]
 ```
 
@@ -928,6 +930,118 @@ Function to output detailed information on a specific layer
     result: 
     {
         error: "Internal server error"
+    }
+}
+```
+
+# Preidct Positioning
+---
+
+
+{: .post}
+> <dl>
+>   <dt>POST</dt>
+>   <dd>/v1/device/preidct</dd>
+>   <dt>AUTHORIZATIONS</dt>
+>   <dd>Access Token</dd>
+>   <dt>Request Body Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+> | field | type | desc |
+> |:----|:-------|:--------------------------|
+> | bssid | string | device's Unique ID |
+> | rssi | map<string, int> | Key-value pairs of WiFi MAC addresses and rssi signals scanned by the device |
+> | sensorValue | int | Analogue sensor value for checking battery level (0–1023) None 0 |
+> | voltage | float | Battery voltage based on measured sensor values sensorValue * (3.7 / 1023) If not available, 0 |
+> | percentage | float | If there is no estimated battery percentage, it will show 0. |
+> | time | long | Unix time when request were transmitted |
+
+
+## Response
+---
+
+{: .new}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>200</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result:
+    {
+        susess: "Positioning Created"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>400</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Bad request"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>404</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Not found"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>429</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "This token is not authenticated."
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>500</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Coordinates failed: {Error Message}"
     }
 }
 ```
