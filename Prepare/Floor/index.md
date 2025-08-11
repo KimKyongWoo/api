@@ -32,6 +32,7 @@ In simple terms, it’s a core API that lets you instantly know which floor an i
 > ```
 
 ## Search for asset locations on Floor
+---
 
 {: .note}
 > A function that queries the location of assets on a specific floor on the drawing in terms of X and Y plane pixels, providing the X and Y location of the asset as well as the time (Unix timestamp) when it existed at that location.
