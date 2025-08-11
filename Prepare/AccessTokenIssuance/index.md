@@ -19,8 +19,8 @@ Therefore, you must go through the process of issuing an access token to call ot
 > {
 >    result: 
 >    {
->        key_expired: long,
->        access_token: string,
+>        key_expired: "long",
+>        access_token: "string",
 >    }
 > }
 > ```

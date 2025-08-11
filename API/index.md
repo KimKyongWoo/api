@@ -12,7 +12,6 @@ nav_order: 4
 * [Refresh Token](#refresh-token)
 * [Building List](#building-list)
 * [Floor List In Building](#floor-list-in-building)
-* [Floor List](#floor-list)
 * [Floor Info](#floor-info)
 * [Create Coordinates In Floor](#create-coordinates-in-floor)
 * [Get Floor Coordinates](#get-floor-coordinates)
@@ -609,108 +608,6 @@ A function that prints only the basic information of all floors belonging to a s
 }
 ```
 
-# Floor List
----
-
-{: .warning}
-> This feature temporarily provides basic information on all levels managed by the organization and will be deleted in the future.
-
-{: .get}
-> <dl>
->   <dt>GET</dt>
->   <dd>/v1/floor/list</dd>
->   <dt>AUTHORIZATIONS</dt>
->   <dd>Access Token</dd>
-> </dl>
-
-
-## Response
----
-
-{: .new}
-> <dl>
->   <dt>Code</dt>
->   <dd>200</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-[
-    {
-        floor_id:"string",
-        floor_name:"string"
-    }
-]
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>400</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "Bad request"
-    }
-}
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>404</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "Not found"
-    }
-}
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>429</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "This token is not authenticated."
-    }
-}
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>500</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "Internal server error"
-    }
-}
-```
 
 # Floor Info
 ---
