@@ -27,6 +27,7 @@ Information about the coordinates predicted by the learned model is transmitted 
 
 
 ## Predict Positioning
+---
 
 When it is not possible to predict the location of current assets using the built-in model, this feature requests a prediction by retrieving the surrounding situation via API.
 
