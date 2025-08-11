@@ -15,6 +15,7 @@ nav_order: 4
 * [Floor Info](#floor-info)
 * [Create Coordinates In Floor](#create-coordinates-in-floor)
 * [Get Floor Coordinates](#get-floor-coordinates)
+* [Preidct Positioning](#preidct-positioning)
 
 ---
 
