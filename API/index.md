@@ -1042,7 +1042,7 @@ Function to output detailed information on a specific layer
 {
     result: 
     {
-        error: "Coordinates failed: {Error Message}"
+        error: "Positioning Predict failed: {Error Message}"
     }
 }
 ```
