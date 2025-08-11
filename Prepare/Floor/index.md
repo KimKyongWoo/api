@@ -21,8 +21,8 @@ In simple terms, it’s a core API that lets you instantly know which floor an i
 >
 > ```js
 > {
->	floor_id:"string"
->	floor_name:"string"
+>	floor_id:"string",
+>	floor_name:"string",
 >	floor_img:"string",
 >	floor_x_by_meter:"float",
 >	floor_y_by_meter:"float",
@@ -44,7 +44,7 @@ In simple terms, it’s a core API that lets you instantly know which floor an i
 >       asset_name: "string",
 >       asset_x: "double",
 >       asset_y: "double",
->       timestamp: "long",
+>       timestamp: "long"
 >   }   
 > ]
 > ```

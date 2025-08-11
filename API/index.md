@@ -14,8 +14,8 @@ nav_order: 4
 * [Floor List In Building](#floor-list-in-building)
 * [Floor Info](#floor-info)
 * [Create Coordinates In Floor](#create-coordinates-in-floor)
-* [Get Floor Coordinates](#get-floor-coordinates)
 * [Preidct Positioning](#preidct-positioning)
+* [Get Floor Coordinates](#get-floor-coordinates)
 
 ---
 
@@ -828,113 +828,6 @@ Function to output detailed information on a specific layer
 }
 ```
 
-# Get Floor Coordinates
----
-
-
-{: .get}
-> <dl>
->   <dt>GET</dt>
->   <dd>/v1/floor/coordinates</dd>
->   <dt>AUTHORIZATIONS</dt>
->   <dd>Access Token</dd>
->   <dt>Query</dt>
->   <dd>floor_id</dd>
->   <dd>time</dd>
-> </dl>
-
-
-## Response
----
-
-{: .new}
-> <dl>
->   <dt>Code</dt>
->   <dd>200</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-[
-    {
-        asset_id: "string",
-        asset_name: "string",
-        asset_x: "double",
-        asset_y: "double",
-        timestamp: "long",
-    }   
-]
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>400</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "Bad request"
-    }
-}
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>404</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "Not found"
-    }
-}
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>429</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "This token is not authenticated."
-    }
-}
-```
-
-{: .warning}
-> <dl>
->   <dt>Code</dt>
->   <dd>500</dd>
->   <dt>Response Schema</dt>
->   <dd>application/json</dd>
-> </dl>
-> 
-```js
-{
-    result: 
-    {
-        error: "Internal server error"
-    }
-}
-```
-
 # Preidct Positioning
 ---
 
@@ -1043,6 +936,113 @@ Function to output detailed information on a specific layer
     result: 
     {
         error: "Positioning Predict failed: {Error Message}"
+    }
+}
+```
+
+# Get Floor Coordinates
+---
+
+
+{: .get}
+> <dl>
+>   <dt>GET</dt>
+>   <dd>/v1/floor/coordinates</dd>
+>   <dt>AUTHORIZATIONS</dt>
+>   <dd>Access Token</dd>
+>   <dt>Query</dt>
+>   <dd>floor_id</dd>
+>   <dd>time</dd>
+> </dl>
+
+
+## Response
+---
+
+{: .new}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>200</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+[
+    {
+        asset_id: "string",
+        asset_name: "string",
+        asset_x: "double",
+        asset_y: "double",
+        timestamp: "long"
+    }   
+]
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>400</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Bad request"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>404</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Not found"
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>429</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "This token is not authenticated."
+    }
+}
+```
+
+{: .warning}
+> <dl>
+>   <dt>Code</dt>
+>   <dd>500</dd>
+>   <dt>Response Schema</dt>
+>   <dd>application/json</dd>
+> </dl>
+> 
+```js
+{
+    result: 
+    {
+        error: "Internal server error"
     }
 }
 ```
