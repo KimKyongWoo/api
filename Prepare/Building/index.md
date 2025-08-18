@@ -24,8 +24,7 @@ The results of the search are as follows.
 > [
 >   {
 >       building_id: "string",
->       building_name: "string",
->       building_img: "string"
+>       building_name: "string"
 >   }
 > ]
 > ```

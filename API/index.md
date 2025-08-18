@@ -846,10 +846,6 @@ Function to output detailed information on a specific layer
 > |:----|:-------|:--------------------------|
 > | bssid | string | device's Unique ID |
 > | rssi | map<string, int> | Key-value pairs of WiFi MAC addresses and rssi signals scanned by the device |
-> | sensorValue | int | Analogue sensor value for checking battery level (0–1023) None 0 |
-> | voltage | float | Battery voltage based on measured sensor values sensorValue * (3.7 / 1023) If not available, 0 |
-> | percentage | float | If there is no estimated battery percentage, it will show 0. |
-> | time | long | Unix time when request were transmitted |
 
 
 ## Response
