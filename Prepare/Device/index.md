@@ -1,6 +1,6 @@
 ---
 title: Device
-parent: Things to prepare in advance
+parent: Getting Started
 layout: default
 nav_order: 36
 nav_enabled: true

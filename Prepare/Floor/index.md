@@ -1,6 +1,6 @@
 ---
 title: Floor
-parent: Things to prepare in advance
+parent: Getting Started
 layout: default
 nav_order: 35
 nav_enabled: true

@@ -1,6 +1,6 @@
 ---
 title: Key registration
-parent: Things to prepare in advance
+parent: Getting Started
 layout: default
 nav_order: 31
 nav_enabled: true

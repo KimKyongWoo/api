@@ -1,6 +1,6 @@
 ---
 title: Access Token Issuance
-parent: Things to prepare in advance
+parent: Getting Started
 layout: default
 nav_order: 33
 nav_enabled: true
