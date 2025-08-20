@@ -12,8 +12,8 @@ The IPINLABS API provides a set of web-based technologies that allow external de
 # Overview
 ---
 
-This guide outlines the key information you need to know before developing client applications with the IPINLABS API.
-    * Last updated: August 5, 2025
+This guide outlines the key information you need to know before developing client applications with the IPINLABS API.  
+* Last updated: August 5, 2025
 
 
 {: .warning }
