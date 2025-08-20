@@ -13,9 +13,10 @@ nav_order: 5
 > {: .highlight }
 > - The response body is formatted as JSON.
 > - Always check the status code first to determine whether the request succeeded, then parse the response body accordingly.
-> - Success (2xx): The request was processed successfully, and the response body will contain the expected data.
-> - Error (4xx, 5xx): The request failed, and the response body will contain an error code and message.
 > </div>
+
+- Success (2xx): The request was processed successfully, and the response body will contain the expected data.
+- Error (4xx, 5xx): The request failed, and the response body will contain an error code and message.
 
 
 | HTTP STATUS CODE(ERROR TYPE) | Reasons Errors |

@@ -6,7 +6,7 @@ nav_order: 31
 nav_enabled: true
 ---
 
-# Key Registration & Activate
+# Key Registration
 ---
 
 The IPINLABS API issues authentication keys to each organization. These keys serve as unique identifiers to ensure that only authorized users can access the API.
