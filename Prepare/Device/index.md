@@ -12,7 +12,7 @@ nav_enabled: true
 Devices (or apps) are used to track assets operating on a floor. There are two main methods:
 1. Tracker devices attached directly to assets
 2. Mobile apps that collect and transmit location data
-These devices/apps scan the surrounding environment to determine position. (내용확인 필요, 앱 로컬로 계산하는 부분을 명시한건지)
+These devices/apps scan the surrounding environment to determine position.
 - If pre-trained data is available: The device predicts the location locally and sends the calculated coordinates via API.
 - If pre-trained data is not available: The device sends scan data to the API, which then calculates and returns the coordinates.
 
