@@ -1,27 +1,27 @@
 ---
-title: Error Code
+title: Error Codes
 layout: default
 nav_order: 5
+---
+
+# Error Codes
 ---
 
 {: .important }
 > {: .opaque }
 > <div markdown="block">
 > {: .highlight }
-> When you call an API, you receive the API processing results as an HTTP status code.
-> The response value is received as an HTTP response body. The response value format can be JSON.
-> Therefore, when processing API responses, first check whether the processing was successful using the HTTP status code, then parse the results according to the response format for use in your service.
+> - The response body is formatted as JSON.
+> - Always check the status code first to determine whether the request succeeded, then parse the response body accordingly.
+> - Success (2xx): The request was processed successfully, and the response body will contain the expected data.
+> - Error (4xx, 5xx): The request failed, and the response body will contain an error code and message.
 > </div>
-
-{: .note }
-> * Successful: The HTTP status code is ‘2xx’, and you will receive the specified format of results for each API.
-> * Error: HTTP status codes are in the 4xx and 500, and you will receive error codes and error messages specified for each API.
 
 
 | HTTP STATUS CODE(ERROR TYPE) | Reasons Errors |
 |:-------------|:------------------|
-| 400           | If there are no required request variables or the request variable names are incorrect |
+| 400           | Missing required parameters, or incorrect parameter names |
 | 401 | Authentication failed |
-| 404           | If the API request URL is incorrect |
-| 429           | When calling the API, if the daily allowance is exceeded |
-| 500           | The API call was successful, but an error occurred due to API server maintenance or a system error |
+| 404           | API request URL is incorrect |
+| 429           | Daily request limit exceeded |
+| 500           | Request reached the server, but failed due to maintenance or system error |

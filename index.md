@@ -8,14 +8,23 @@ nav_order: 0
 ---
 
 {: .note }
->  Ipinlabs API is a set of technologies made available in web format so that external developers can easily use Ipinlabs' features.
+>   The IPINLABS API provides a set of web-based technologies that allow external developers to easily integrate and use IPINLABS features.
 
-# API Common Guide Overview
+# Overview
 ---
 
 {: .important }
-> The API Common Guide explains what you need to know in advance when developing client applications using Ipinlabs API.
->   * Last modified: August 5, 2025  
+> This guide outlines the key information you need to know before developing client applications with the IPINLABS API.
+>   * Last updated: August 5, 2025
 
 {: .warning }
-> The contents of this document are subject to change at any time.
+> Note: The contents of this document are subject to change without notice.
+
+# Getting Started
+---
+
+## API Authentication Key
+{: .note }
+> To use the IPINLABS API, you must first register as a user and obtain an API authentication key (contact).
+> The API authentication key verifies your identity as an authorized user and is issued once your license is registered.
+> API usage is calculated based on the number of calls made to each function.

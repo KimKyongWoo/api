@@ -6,18 +6,21 @@ nav_order: 35
 nav_enabled: true
 ---
 
-# Over View
+# OverView
 ---
 
-This system provides a basic function to track the real-time location of assets on each floor of buildings managed by the organization.
-In simple terms, it’s a core API that lets you instantly know which floor an item is on and where exactly it is inside the building.
+These functions provide real-time location data for assets on each floor of your organization’s buildings.
+In simple terms, it is a core API that lets you identify:
+- Which floor an asset is on
+- The asset’s exact position on that floor
 
-## Floor Info
+
+# Get Floor Information
 ---
+
+Returns detailed information about a specific floor, including the floor number, floor name, and drawing information.
 
 {: .note}
->
-> This function displays detailed information about a specific floor, including the floor number, floor name, and drawing information.
 >
 > ```js
 > {
@@ -31,11 +34,13 @@ In simple terms, it’s a core API that lets you instantly know which floor an i
 > }
 > ```
 
-## Search for asset locations on Floor
+# Get Asset Locations on a Floor
 ---
 
+Queries the real-time location of assets within a specific floor.
+Positions are expressed in (X, Y) pixel coordinates on the floor map, along with the timestamp of the last update.
+
 {: .note}
-> A function that queries the location of assets on a specific floor on the drawing in terms of X and Y plane pixels, providing the X and Y location of the asset as well as the time (Unix timestamp) when it existed at that location.
 >
 > ```js
 > [

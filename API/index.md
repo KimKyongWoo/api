@@ -10,11 +10,11 @@ nav_order: 4
 * [Key Details](#key-details)
 * [AccessToken Issuance](#accesstoken-issuance)
 * [Refresh Token](#refresh-token)
-* [Building List](#building-list)
-* [Floor List In Building](#floor-list-in-building)
+* [Get Building List](#get-building-list)
+* [Get Floors in Building](#get-floors-in-building)
 * [Floor Info](#floor-info)
 * [Create Coordinates In Floor](#create-coordinates-in-floor)
-* [Preidct Positioning](#preidct-positioning)
+* [Predict Positioning](#predict-positioning)
 * [Get Floor Coordinates](#get-floor-coordinates)
 
 ---
@@ -403,7 +403,7 @@ Renewing AccessToken
 }
 ```
 
-# Building List
+# Get Building List
 ---
 
 Print only the basic information of all buildings under management.
@@ -505,7 +505,7 @@ Print only the basic information of all buildings under management.
 }
 ```
 
-# Floor List In Building
+# Get Floors in Building
 ---
 
 A function that prints only the basic information of all floors belonging to a specific building.
@@ -735,9 +735,9 @@ Function to output detailed information on a specific layer
 > | field | type | desc |
 > |:----|:-------|:--------------------------|
 > | floor_id | string | target floor's Unique ID |
-> | x | float | Drawing image reference pixel x coordinate |
-> | y | float | Drawing image reference pixel y coordinate |
-> | time | long | Unix time when coordinates were transmitted |
+> | x | float | X coordinate (pixel) |
+> | y | float | Y coordinate (pixel) |
+> | time | long | Unix timestamp |
 
 
 ## Response
@@ -755,7 +755,7 @@ Function to output detailed information on a specific layer
 {
     result:
     {
-        susess: "Coordinates Created"
+        success: "Coordinates Created"
     }
 }
 ```
@@ -828,14 +828,14 @@ Function to output detailed information on a specific layer
 }
 ```
 
-# Preidct Positioning
+# Predict Positioning
 ---
 
 
 {: .post}
 > <dl>
 >   <dt>POST</dt>
->   <dd>/v1/device/preidct</dd>
+>   <dd>/v1/device/Predict</dd>
 >   <dt>AUTHORIZATIONS</dt>
 >   <dd>Access Token</dd>
 >   <dt>Request Body Schema</dt>
@@ -863,7 +863,7 @@ Function to output detailed information on a specific layer
 {
     result:
     {
-        susess: "Positioning Created"
+        success: "Positioning Created"
     }
 }
 ```

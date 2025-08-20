@@ -6,16 +6,18 @@ nav_order: 34
 nav_enabled: true
 ---
 
-# Over View
+# OverView
 ---
 
-These functions allow you to view information related to buildings managed by the organisation of the API. You can view a list of buildings managed within the organisation, as well as information about the floors belonging to each building.
+These functions provide access to information about buildings managed by your organization.
+- Retrieve a list of all buildings registered under the organizatio
+- Retrieve floor information for each building.
 
-## Building List
+# Get Building List
 ---
 
-A function that allows users to view basic information about all buildings managed by the organisation in list form.
-The results of the search are as follows.
+Returns basic information for all buildings managed by the organization.
+Response example:
 
 {: .note}
 > 
@@ -30,11 +32,10 @@ The results of the search are as follows.
 > ```
 >
 
-## Floor inquiry within the building
+# Get Floors in a Building
 ---
 
-A function to view basic information about registered floors in each building.
-The results of the search are as follows.
+Returns basic information for all registered floors within a specific building.
 
 {: .note}
 > 
