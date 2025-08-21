@@ -6,7 +6,7 @@ nav_order: 34
 nav_enabled: true
 ---
 
-# OverView
+# Overview
 ---
 
 These functions provide access to information about buildings managed by your organization.
@@ -17,7 +17,6 @@ These functions provide access to information about buildings managed by your or
 ---
 
 Returns basic information for all buildings managed by the organization.
-Response example:
 
 {: .note}
 > 

@@ -6,7 +6,7 @@ nav_order: 36
 nav_enabled: true
 ---
 
-# OverView
+# Overview
 ---
 
 Devices (or apps) are used to track assets operating on a floor. There are two main methods:

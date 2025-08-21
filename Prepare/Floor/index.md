@@ -6,7 +6,7 @@ nav_order: 35
 nav_enabled: true
 ---
 
-# OverView
+# Overview
 ---
 
 These functions provide real-time location data for assets on each floor of your organization’s buildings.

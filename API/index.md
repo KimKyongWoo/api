@@ -734,7 +734,7 @@ Function to output detailed information on a specific layer
 > 
 > | field | type | desc |
 > |:----|:-------|:--------------------------|
-> | floor_id | string | target floor's Unique ID |
+> | floor_id | string | Target floor's Unique ID |
 > | x | float | X coordinate (pixel) |
 > | y | float | Y coordinate (pixel) |
 > | time | long | Unix timestamp |
@@ -845,7 +845,7 @@ Function to output detailed information on a specific layer
 > | field | type | desc |
 > |:----|:-------|:--------------------------|
 > | bssid | string | device's Unique ID |
-> | rssi | map<string, int> | Key-value pairs of WiFi MAC addresses and rssi signals scanned by the device |
+> | rssi | map<string, int> | Key-value pairs of WiFi MAC addresses and rssi signals scanned by the Device |
 
 
 ## Response
