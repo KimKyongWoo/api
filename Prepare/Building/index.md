@@ -10,7 +10,7 @@ nav_enabled: true
 ---
 
 These functions provide access to information about buildings managed by your organization.
-- Retrieve a list of all buildings registered under the organizatio
+- Retrieve a list of all buildings registered under the organization
 - Retrieve floor information for each building.
 
 # Get Building List
